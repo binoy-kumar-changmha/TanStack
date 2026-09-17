@@ -1,16 +1,10 @@
-# React + Vite
+# TanStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. I learned how to use useQuery. It gives a abstraction about managing loading state, error handling etc.
+2. Optimistic updates, assumes the fetch will be successful and shows the UI before knowing final result. If fails it rollbacks to previous UI.
+3. Pagination is fetching one by one page cause there can be millions of data. Once we fetch something, that remains in cache memory.
+4. InfiniteQuery is like when u hit the bottom while scrolling, new datas are loaded.
+5. With useQuery, we can handle caching, gcTime (garbage), staleTime (freshness), invalidate a query to refetch when we want etc.
+6. Mutation for updating, modifying data etc.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+yeah, it's that simple!
